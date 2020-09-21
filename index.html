@@ -21,12 +21,12 @@ SC.initialize({
   redirect_uri: 'ahunt5309.github.io'
 });
 
-// initiate auth popup
-// SC.connect().then(function() {
-//   return SC.get('/me');
-// }).then(function(me) {
-//   alert('Hello, ' + me.username);
-// });
+initiate auth popup
+SC.connect().then(function() {
+  return SC.get('/me');
+}).then(function(me) {
+  alert('Hello, ' + me.username);
+});
 // 
 // ll = SC.resolve('https://soundcloud.com/lachassesounds/sets/new-playlist-1');
 // SC.get('/playlists/675959258').then(function(playlist) {
