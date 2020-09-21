@@ -22,12 +22,13 @@ SC.initialize({
   client_id: 'hwSFx6B8BZYoHcQpQCjj8JxZt6LILxfv',
 });
 
+var pl
 
 var getFirstPlaylist = function() {
-  return SC.get('/' + USER + '/playlists', { limit: 1 });
+  return console.log(SC.get('/' + USER + '/playlists', { limit: 1 }));
 };
 
-console.log(getFirstPlaylist);
+
 console.log('JS');
 
 // initiate auth popup
