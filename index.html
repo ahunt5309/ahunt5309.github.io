@@ -1,0 +1,47 @@
+<!-- 
+LikeLink
+Andrew Hunt
+LikeLink.html
+09/20/2020
+
+html application using javascript for transferring liked spotify tracks
+into a soundcloud playlist
+
+client id: hwSFx6B8BZYoHcQpQCjj8JxZt6LILxfv
+user id: 675959258
+-->
+<html>
+<head>
+
+
+<script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
+<script>
+SC.initialize({
+  client_id: 'hwSFx6B8BZYoHcQpQCjj8JxZt6LILxfv',
+  redirect_uri: 'ahunt5309.github.io'
+});
+
+// initiate auth popup
+// SC.connect().then(function() {
+//   return SC.get('/me');
+// }).then(function(me) {
+//   alert('Hello, ' + me.username);
+// });
+// 
+// ll = SC.resolve('https://soundcloud.com/lachassesounds/sets/new-playlist-1');
+// SC.get('/playlists/675959258').then(function(playlist) {
+//   playlist.tracks.forEach(function(track) {
+//     console.log(track.title);
+//   });
+// });
+</script>
+<title>Like Link</title>
+</head>
+
+<body>
+	<p>LikeLink is running.</p>
+</body>
+  
+  
+</hmtl>
+
