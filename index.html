@@ -16,17 +16,25 @@ user id: 675959258
 
 <script src="https://connect.soundcloud.com/sdk/sdk-3.3.2.js"></script>
 <script>
+var USER = '675959258';
+
 SC.initialize({
   client_id: 'hwSFx6B8BZYoHcQpQCjj8JxZt6LILxfv',
-  redirect_uri: 'https://soundcloud.com/lachassesounds'
 });
 
+
+var getFirstPlaylist = function() {
+  return SC.get('/' + USER + '/playlists', { limit: 1 });
+};
+
+console.log(getFirstPlaylist.track_count);
+
 // initiate auth popup
-SC.connect().then(function() {
-  return SC.get('/me');
-}).then(function(me) {
-  alert('Hello, ' + me.username);
-});
+// SC.connect().then(function() {
+//   return SC.get('/me');
+// }).then(function(me) {
+//   alert('Hello, ' + me.username);
+// });
 // 
 // ll = SC.resolve('https://soundcloud.com/lachassesounds/sets/new-playlist-1');
 // SC.get('/playlists/675959258').then(function(playlist) {
